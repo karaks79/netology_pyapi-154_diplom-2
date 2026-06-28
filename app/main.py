@@ -5,13 +5,13 @@ from app.config import YANDEX_DISK_TOKEN
 if __name__ == "__main__":
     
     # Мой IP
-    ip_class = MyIP()
-    ip = ip_class.get_my_ip()
+    ip_obj = MyIP()
+    ip = ip_obj.get_my_ip()
     #print(ip)
 
     # Инфо по IP
-    ip_info_class = IPInfo()
-    ip_info = ip_info_class.get_ip_info(ip)
+    ip_info_obj = IPInfo()
+    ip_info = ip_info_obj.get_ip_info(ip)
     #print(ip_info)
     #print(f"{type(ip_info)=}")
 
